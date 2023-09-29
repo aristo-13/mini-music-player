@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/mini-music-player/style.css">
+    <script src="https://kit.fontawesome.com/5071953267.js" crossorigin="anonymous"></script>
+    <script defer src="/mini-music-player/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="poster">
+                <img src="" alt="" class="poster-img">
+            </div>
+            <div class="controls">
+                <audio id="music" src=""></audio>
+                <span class="title">Now playing</span>
+                <div class="progress">
+                    <input type="range" value="0" class="progressbar">
+                    <div class="play-controls">
+                        <button class="btn prev"><i class="fa-solid fa-backward-step"></i></button>
+                        <button class="btn pause-play"><i class="fa-solid fa-play"></i> <i style="display: none;" class="fa-solid fa-pause"></i></button>
+                        <button class="btn next"><i class="fa-solid fa-forward-step"></i></button>
+                    </div>
+                    <div class="sessions">
+                        <button class="btn repeat"><i class="fa-solid fa-repeat"></i></button>
+                        <button class="btn shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                        <button class="btn list"><i class="fa-solid fa-list"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="head">
+                <button class="back"><i class="fa-solid fa-angle-left"></i></button>
+                <span>Playlist</span>
+            </div>
+            <div class="lists">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
